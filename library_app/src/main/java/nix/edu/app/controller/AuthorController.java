@@ -33,7 +33,7 @@ public class AuthorController {
         return ResponseEntity.ok().build();
     }
 
-    @DeleteMapping()
+    @DeleteMapping("/{id}")
     public ResponseEntity remove(Long id) {
         authorService.remove(id);
         return ResponseEntity.ok().build();
