@@ -32,7 +32,7 @@ public class BookController {
         return ResponseEntity.ok().build();
     }
 
-    @DeleteMapping()
+    @DeleteMapping("/{id}")
     public ResponseEntity remove(Long id) {
         bookService.remove(id);
         return ResponseEntity.ok().build();
